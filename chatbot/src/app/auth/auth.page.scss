@@ -1,0 +1,10 @@
+ion-grid {
+    &.center-grid {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        display: block !important;
+        width: 100%;
+    }
+}

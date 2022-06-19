@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ selectedMember.nom }} {{ selectedMember.prenom }}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onCancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2">
+        <ion-card>
+          <ion-card-header class="ion-text-center">
+            <!--<ion-avatar class="ion-text-center">-->
+              <ion-img [src]="selectedMember.imgUrl" style="height: 130px; width: 130px;"></ion-img>
+            <!--</ion-avatar>-->
+            <ion-card-title>{{ selectedMember.nom }} {{ selectedMember.prenom }}</ion-card-title>
+            <!--<ion-card-subtitle><ion-icon name="briefcase-outline"></ion-icon>  {{ selectedMember.poste }}</ion-card-subtitle>-->
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>{{ selectedMember.tel }}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="at-outline" slot="start"></ion-icon>
+                <ion-label>{{ selectedMember.mail }}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="briefcase-outline" slot="start"></ion-icon>
+                <ion-label>{{ selectedMember.poste }}</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

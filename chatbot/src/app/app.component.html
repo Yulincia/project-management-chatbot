@@ -1,0 +1,36 @@
+<ion-app>
+  <!--<ion-split-pane contentId="main" when="md" [disabled]="!isAuth">-->
+    <ion-menu side="start" menuId="mainMenu" [disabled]="!isAuth" contentId="main" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>
+            Gestion de projets
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle menu="mainMenu">
+            <ion-item lines="none" routerLink="profile">
+              <ion-icon name="person-outline" slot="start"></ion-icon>
+              <ion-label>Profile</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="projects">
+              <ion-icon name="file-tray-full-outline" slot="start"></ion-icon>
+              <ion-label>Projects</ion-label>
+            </ion-item>
+            <ion-item lines="none" routerLink="chat">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              <ion-label>Chat</ion-label>
+            </ion-item>
+            <ion-item lines="none" (click)="onLogout()" button>
+              <ion-icon name="exit-outline" slot="start"></ion-icon>
+              <ion-label>Log Out</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
+  <!--</ion-split-pane>-->
+</ion-app>

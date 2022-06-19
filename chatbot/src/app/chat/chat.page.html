@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<div class="stream" *ngIf="!isLoading">
+    <ion-item lines="none" color="none" *ngFor="let message of loadedMessages">
+      <ion-badge text-wrap slot="start" color="light" *ngIf="message.userId != userId">{{ message.message }}</ion-badge>
+		  <ion-badge text-wrap slot="end" color="secondary" *ngIf="message.userId == userId">{{ message.message }}</ion-badge>
+    </ion-item>
+  </div>-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2">
+        <div class="stream" *ngIf="!isLoading">
+          <div *ngFor="let message of loadedMessages">
+            <ion-item lines="none" color="none" >
+              <ion-badge text-wrap slot="start" color="light" *ngIf="message.userId != userId && message.message != 'listProjects'">{{ message.message }}</ion-badge>
+              <ion-badge text-wrap slot="end" color="secondary" *ngIf="message.userId == userId">{{ message.message }}</ion-badge>
+            </ion-item>
+            <div *ngIf="message.message == 'listProjects'">
+              <!--<ion-card>
+                <ion-card-content>
+                  <ion-list inset=true >
+                    <ion-item slot="start" *ngFor="let project of loadedProjects">
+                      <ion-label>
+                        <h3>{{ project.title }}</h3>
+                      </ion-label>
+                    </ion-item>
+                  </ion-list>
+                </ion-card-content>
+              </ion-card>-->
+              <ion-badge text-wrap slot="start" color="light" *ngIf="loadedProjects.length == 0">It looks like you have no projects yet</ion-badge>
+              <ion-list inset=true class="ion-item-border" *ngIf="loadedProjects.length > 0">
+                <ion-item [routerLink]="['/projects',project.id]" class="ion-item-border" slot="start" *ngFor="let project of loadedProjects">
+                  <ion-label>
+                    <h3>{{ project.title }}</h3>
+                  </ion-label>
+                </ion-item>
+              </ion-list>
+            </div>
+            
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10" size-sm="9" offset-sm="1" class="input-col">
+        <ion-input [(ngModel)]="messageText" placeholder="Votre Message..." type="text"></ion-input>
+      </ion-col>
+      <ion-col size="2" size-sm="2" class="send-col">
+        <ion-button shape="full" (click)="sendMessage()">
+          <ion-icon name="paper-plane"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

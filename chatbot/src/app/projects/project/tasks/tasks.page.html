@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="projects"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tasks</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="new-task">
+        <ion-icon name="add" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isLoading">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" class="ion-text-center">
+        <ion-spinner color="primary"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="!isLoading && (!loadedTasks || loadedTasks.length <= 0)">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" class="ion-text-center">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>The are no tasks added yet...</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button color="primary" routerLink="new-task">Add a new Task</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="!isLoading && loadedTasks.length > 0">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" text-center>
+       <ion-card>
+         <ion-card-content>
+          <ion-list>
+            <ion-item-sliding  *ngFor="let task of loadedTasks" #slidingItem>
+              <ion-item routerLink="{{task.id}}" detail>
+                <ion-note slot="end">{{ task.status }}</ion-note>
+                <ion-badge slot="end" color="warning">{{ task.priority }}</ion-badge>
+                <ion-label>
+                  <h2>{{ task.title }}</h2>
+                  <p>{{ task.description }}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item-options side="end">
+                <ion-item-option color="secondary" expandable (click)="onEditTask(task, slidingItem)" *ngIf="role==='role2'">
+                  Edit
+                  <ion-icon name="create-outline" slot="start"></ion-icon>
+                </ion-item-option>
+              </ion-item-options>
+              <ion-item-options side="start">
+                <ion-item-option color="danger" expandable (click)="onDeleteTask(task.id, slidingItem)">
+                  Delete
+                  <ion-icon name="trash-outline" slot="start"></ion-icon>
+                </ion-item-option>
+              </ion-item-options>
+            </ion-item-sliding>
+          </ion-list>
+         </ion-card-content>
+       </ion-card>
+        <!--<ion-virtual-scroll [items]="loadedTasks" approxItemHeight="70px">
+          <ion-item-sliding  #slidingItem *virtualItem="let task">
+            <ion-item routerLink="{{task.id}}" detail >
+              <ion-note slot="end">{{ task.status }}</ion-note>
+              <ion-badge slot="end" color="warning">{{ task.priority }}</ion-badge>
+              <ion-label>
+                <h2>{{ task.title }}</h2>
+                <p>{{ task.description }}</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option color="secondary" expandable (click)="onEditTask(task.id, slidingItem)">
+                Edit
+                <ion-icon name="create-outline" slot="start"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+            <ion-item-options side="start">
+              <ion-item-option color="danger" expandable (click)="onDeleteTask(task.id, slidingItem)">
+                Delete
+                <ion-icon name="trash-outline" slot="start"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-virtual-scroll>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

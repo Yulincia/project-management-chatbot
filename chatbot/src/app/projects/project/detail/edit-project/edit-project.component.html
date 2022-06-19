@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Project {{ selectedProject.title }}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onCancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #editProjectForm="ngForm" (ngSubmit)="onSubmit(editProjectForm)">
+    <ion-grid>
+      <!--<ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Id</ion-label>
+            <ion-input [(ngModel)]="selectedProject.id" type="text" name="id" autocomplete autocorrect required disabled></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>-->
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Title</ion-label>
+            <ion-input [(ngModel)]="selectedProject.title" type="text" name="title" autocomplete autocorrect required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Description</ion-label>
+            <ion-textarea [(ngModel)]='selectedProject.description' rows="6" type="text" name="description" autocomplete autocorrect required></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3" class="ion-text-right">
+          <ion-button type="submit" [disabled]="!editProjectForm.valid" (click)="onProjectEdit()">Edit</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="projects"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Task Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-button margin color="primary" (click)="backClicked()">Edit</ion-button>-->
+  <ion-grid *ngIf="isLoading">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" class="ion-text-center">
+        <ion-spinner color="primary"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="!isLoading">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">{{ task.title }}</ion-card-title>
+            <!--<ion-card-subtitle>Project</ion-card-subtitle>-->
+          </ion-card-header>
+          <!--<ion-img [src]="loadedProjects[0].imgUrl"></ion-img>-->
+          <ion-card-content>
+            <p>{{ task.description }}</p>
+          </ion-card-content>
+          <div class="ion-text-right" >
+            <ion-button fill="clear" color="primary" (click)="onEditTask()"> Edit</ion-button>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

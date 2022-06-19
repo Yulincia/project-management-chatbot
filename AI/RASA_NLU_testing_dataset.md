@@ -1,0 +1,503 @@
+## intent:greet
+- hi morning
+- hello whatsup
+- hey morning how are things going?
+- good day whatsup
+- greetings
+- good night
+- hi good day
+- morning how is it going?
+- hey good morning whatsup
+- hello morning
+- good night sup
+- hello how are things going?
+- good morning how are you?
+- hello how is it going?
+- hi good night
+- hey greetings how are you doing?
+- hello good night are you around?
+- good day are you around
+- hey good night
+- hello good day
+- hello good morning how is it going?
+- hello are you around
+- hi good afternoon how are things going?
+- good afternoon are you there
+- greetings are you there
+- hi greetings whatsup
+- hello whats up?
+- greetings are you around
+- hi whats up?
+- hello greetings
+- hey sup
+- hi good morning
+- hi good day how are you doing?
+- hello good afternoon how is it going?
+- hi good night whatsup
+- good morning how is it going?
+- hey morning how is it going?
+- greetings whatsup
+- hi morning are you around?
+- hello good night are you around
+- good day are you there
+- hey morning sup
+- hello good morning sup
+- greetings how are you doing?
+- good day are you around?
+- hey good day how is it going?
+- hi greetings how are you doing?
+- hi good morning are you around?
+- hello good night sup
+- hey good afternoon
+
+## intent:bye
+- have a good day
+- im leaving now
+- thank you farewell
+- goodbye thank you
+- farewell
+- see you later
+- i'm here if you need help if the future
+- talk to you soon Have a nice day
+- thanks gtg
+- thank you chau
+- Thank you very much adieu
+- gtg
+- talk to you later bye
+- leaving Have a great day
+- thank you i'm here if you need help if the future
+- leaving chao
+- thank you chao
+- talk to you later
+- talk to you later Have a nice day
+- thank you bye
+- gtg thanks
+- have a good day thank you
+- have a wonderful day Thank you very much
+- Have a great day thank you
+- thank you have a wonderful day
+- i'm here if you need help if the future thank you
+- talk to you later adieu
+- i'm here if you need help if the future thanks
+- leaving adios
+- chao Thank you very much
+- got to go have a good day
+- thanks bye
+- gtg thank you
+- thank you adieu
+- ttyl thank you
+- thanks ttyl
+- thank you Have a nice day
+- adios thank you
+- got to go
+- thanks Have a nice day
+- Have a nice day thanks
+- Have a great day Thank you very much
+- thanks chau
+- have to go adieu
+- have to go chau
+- thanks adios
+- Thank you very much bye
+- goodbye Thank you very much
+- see you later goodbye
+- goodbye
+
+## intent:affirmative
+- sounds good
+- im ok with that that is fine agreed
+- exactly please
+- yes please
+- right
+- exactly plz
+- yep yes Thank you very much
+- yep please
+- exactly
+- agreed
+- yes sir please
+- im ok with that right
+- agreed yes thanks
+- okay correct thanks
+- agreed please
+- exactly correct thank you
+- agreed that is what i want right
+- yes good right
+- right i want that right
+- exactly that is fine okay
+- yep correct
+- agreed its fine okay
+- affirmative correct thank you
+- correct that is what i want
+- im ok with that sounds good
+- sounds good sounds good thank you
+- right that is right exactly
+- correct yes thanks
+- okay im ok with that Thank you very much
+- okay its fine
+- exactly exactly Thank you very much
+- affirmative that is what i want im ok with that
+- sounds good affirmative
+- exactly thanks
+- right yep
+- yes exactly
+- i want that yes sir
+- yep you understood me yes sir
+- yes sir affirmative thank you
+- that's it correct
+- okay okay thanks
+- right correct Thank you very much
+- agreed plz
+- agreed affirmative Thank you very much
+- right that is right yes sir
+- yep pls
+- exactly sounds good thanks
+- im ok with that im ok with that thank you
+- sounds good yes Thank you very much
+- sounds good agreed thank you
+
+## intent:negative
+- pls not really that's not what i want
+- no its not ok
+- plz don't do that it's not good
+- don't do that pls its not ok
+- not really its not correct
+- please don't do that that's wrong
+- don't do that that is wrong
+- pls nope dont mean that
+- incorrect plz i don't want that
+- nope please
+- don't do that please it's not good
+- plz not really didnt meant that
+- that's not right that's not it
+- pls that's not right i don't want that
+- not really please
+- please no that is wrong
+- plz not really that's not it
+- please incorrect its not correct
+- pls not really dont mean that
+- didnt meant that
+- incorrect plz it's not good
+- please incorrect dont mean that
+- plz nope that's not it
+- that's not right that's not what i want
+- please nope didnt meant that
+- please that's not right that's not what i want
+- plz nope that's not correct
+- pls no that's not it
+- that's not right plz
+- plz no that's not correct
+- please that's not right that's wrong
+- don't do that plz i don't want that
+- don't do that pls dont mean that
+- incorrect plz
+- that's not right please that's wrong
+- plz not really its not correct
+- plz don't do that that's wrong
+- pls that's not right that's wrong
+- pls incorrect i don't want that
+- nope that's not what i want
+- don't do that pls that's not correct
+- that's not it
+- please nope i don't want that
+- please not really didnt meant that
+- no plz
+- incorrect plz that is wrong
+- plz don't do that
+- please that's not right that's not correct
+- no didnt meant that
+- that's not right pls that's not it
+
+## intent:listProjects
+- get list of projects that are [began](state) Thank you very much
+- hey plz help me get projects [ended](state) thanks
+- list of projects [pending](state)
+- hello plz help me find projects that are [completed](state) thank you
+- hello give projects [ongoing](state) Thank you very much
+- hello help me get list of projects
+- give me list of projects thanks
+- plz find list of projects that are [stopped](state) Thank you very much
+- hello get me list of projects that are [in progress](state) thanks
+- hi give list of projects
+- hi pls help me find projects Thank you very much
+- hi plz help me get projects that are [blocked](state) thank you
+- hi help me get list of projects that are [started](state) thank you
+- please list of projects thank you
+- i'm looking for projects
+- projects [finished](state)
+- pls get projects thanks
+- plz i'm looking for list of projects
+- hey please get list of projects that are [pending](state)
+- hey please i'm looking for projects [ended](state) Thank you very much
+- projects [beggined](state)
+- hello plz get me projects
+- hi please help me get list of projects thanks
+- plz give list of projects Thank you very much
+- hey please help me find list of projects that are [blocked](state) thank you
+- help me get list of projects that are [blocked](state) thank you
+- hey please get list of projects [pending](state)
+- hello please list of projects [ongoing](state) thank you
+- list of projects [began](state)
+- hey plz help me find projects Thank you very much
+- hi pls give me list of projects
+- plz get me projects thanks
+- hi plz get me projects [finished](state)
+- projects [began](state)
+- list of projects that are [started](state)
+- hey help me find list of projects that are [ongoing](state)
+- hey plz give me projects [stopped](state) thank you
+- hello pls i'm looking for list of projects thank you
+- hello plz help me find list of projects Thank you very much
+- please give me projects thanks
+- hey plz get me projects [completed](state) Thank you very much
+- projects [ended](state)
+- hey pls help me find list of projects thanks
+- hey pls get me list of projects thanks
+- hello pls projects [blocked](state) Thank you very much
+- hi plz give me list of projects that are [completed](state) thank you
+- please give projects [ongoing](state)
+- hey please give me projects that are [stopped](state) thanks
+- hi please help me find list of projects that are [completed](state) thanks
+- hey get list of projects Thank you very much
+- hello pls help me get list of projects thanks
+- give projects thank you
+- hi i'm looking for projects [ongoing](state) thanks
+- hey please get me list of projects
+- hello help me find projects [ongoing](state) thanks
+- hi pls give me list of projects [started](state) Thank you very much
+- hi please projects that are [completed](state) thanks
+- hi pls get projects that are [beggined](state)
+- plz give projects [finished](state) thanks
+- hey get list of projects thanks
+- hello pls find list of projects [finished](state) thanks
+- hey please projects thank you
+- list of projects that are [finished](state)
+- hello pls get me list of projects [in progress](state) Thank you very much
+- hello pls projects [started](state) Thank you very much
+- hey get list of projects [pending](state) thanks
+- hey pls give list of projects thanks
+- hi i'm looking for list of projects that are [in progress](state)
+- hey please find list of projects [beggined](state) thanks
+- hi pls projects thanks
+- hi find projects [blocked](state) thank you
+- hello list of projects that are [beggined](state) Thank you very much
+- hi help me find list of projects thanks
+- list of projects [stopped](state)
+- plz get me list of projects [began](state) Thank you very much
+- hey give projects thank you
+- hi please get me list of projects thank you
+- hi pls i'm looking for projects that are [stopped](state) thank you
+- pls help me find projects thanks
+- list of projects thanks
+- hello plz help me get list of projects that are [blocked](state)
+- hi please i'm looking for projects [beggined](state) Thank you very much
+- hey please projects Thank you very much
+- hey please give me projects [ongoing](state)
+- hey plz find list of projects thank you
+- hello please help me find list of projects [blocked](state)
+- hi list of projects [pending](state) thank you
+- hello please give me list of projects [ongoing](state) thanks
+- get list of projects
+- hello pls get me list of projects that are [began](state)
+- hi help me find projects that are [stopped](state) Thank you very much
+- hey i'm looking for list of projects that are [began](state) thank you
+- list of projects [blocked](state)
+- hi pls give me projects Thank you very much
+- plz list of projects that are [began](state) thank you
+- pls give me list of projects that are [blocked](state) thanks
+- projects [stopped](state)
+- hey give me list of projects Thank you very much
+- projects [started](state)
+- hi please give me projects [completed](state) thank you
+
+## intent:listTasks
+- hello plz find tasks Thank you very much
+- hey pls help me find tasks that are [ongoing](state) thanks
+- hi please get me list of tasks [finished](state)
+- help me get list of tasks thanks
+- hi plz give me tasks [began](state) Thank you very much
+- tasks with priotity [1](priority)
+- get list of tasks with priority [1](priority) Thank you very much
+- please give list of tasks with priority [3](priority) thanks
+- plz give list of tasks with priority [3](priority) thank you
+- hey pls help me get tasks with priority [3](priority) thanks
+- pls give list of tasks with priority [3](priority) Thank you very much
+- list of tasks with priotity [1](priority)
+- please tasks that are [beggined](state)
+- hi tasks that are [completed](state) thanks
+- hey please help me find tasks with priority [2](priority)
+- find tasks with priority [0](priority) thanks
+- tasks with priotity [0](priority)
+- list of tasks with priotity [2](priority)
+- hey get tasks with priority [1](priority) Thank you very much
+- hi plz find tasks with priority [3](priority) thank you
+- hello help me get tasks with priority [3](priority) thank you
+- hey plz tasks thank you
+- hello pls find tasks that are [began](state) Thank you very much
+- tasks [in progress](state)
+- plz help me find tasks that are [started](state) thank you
+- hey plz help me find list of tasks that are [completed](state) thanks
+- hello please get me list of tasks Thank you very much
+- please help me find list of tasks with priority [2](priority) Thank you very much
+- hi pls tasks [started](state) Thank you very much
+- list of tasks that are [beggined](state)
+- hey please find tasks that are [in progress](state) thank you
+- hey plz help me find tasks Thank you very much
+- hey please help me find list of tasks with priority [3](priority)
+- i'm looking for tasks that are [ongoing](state) thanks
+- find tasks [pending](state) Thank you very much
+- hey please tasks with priority [2](priority) Thank you very much
+- hello pls get me list of tasks [beggined](state) Thank you very much
+- hi pls tasks that are [finished](state) Thank you very much
+- hello please give me tasks [completed](state) thanks
+- hello please get me tasks with priority [3](priority) Thank you very much
+- pls help me find tasks thank you
+- hi plz give me tasks thanks
+- tasks that are [pending](state)
+- hello plz give me list of tasks with priority [2](priority) thanks
+- plz get me tasks [in progress](state) thank you
+- find list of tasks [pending](state) Thank you very much
+- hello pls get me tasks thanks
+- hi give list of tasks that are [completed](state) Thank you very much
+- hey plz list of tasks with priority [3](priority) thank you
+- hi get list of tasks with priority [1](priority) Thank you very much
+- hi get list of tasks with priority [0](priority) thank you
+- hey give me list of tasks with priority [3](priority) Thank you very much
+- hi i'm looking for tasks that are [completed](state) Thank you very much
+- plz give list of tasks [finished](state)
+- hi give me list of tasks with priority [1](priority) Thank you very much
+- pls give list of tasks with priority [3](priority)
+- hey help me find list of tasks that are [pending](state) thanks
+- hey pls help me get tasks
+- hey pls get list of tasks that are [in progress](state)
+- hey please get tasks with priority [1](priority) thanks
+- hi i'm looking for tasks thanks
+- hello plz get tasks Thank you very much
+- hey please give list of tasks [ongoing](state) Thank you very much
+- please find tasks with priority [0](priority) Thank you very much
+- hi pls find list of tasks with priority [1](priority) thank you
+- hey plz get list of tasks with priority [2](priority)
+- hey plz i'm looking for list of tasks with priority [0](priority) thank you
+- hi plz give tasks [started](state) thanks
+- hi please find list of tasks [ongoing](state)
+- hello pls get me tasks [ended](state) thanks
+- hi give me tasks with priority [1](priority) thanks
+- hello please get list of tasks thank you
+- get me tasks that are [ended](state) thank you
+- find tasks
+- hey please help me get tasks with priority [0](priority) thanks
+- give me tasks [ended](state)
+- hey pls help me find tasks with priority [1](priority) thank you
+- hello pls give me list of tasks that are [finished](state) Thank you very much
+- hi get me tasks that are [in progress](state)
+- hello plz i'm looking for tasks with priority [1](priority) thanks
+- please give me tasks [started](state) thank you
+- list of tasks [finished](state)
+- plz get list of tasks that are [ended](state) thanks
+- hi please help me get tasks Thank you very much
+- hello please help me get list of tasks
+- hello please get tasks [pending](state) Thank you very much
+- pls get list of tasks with priority [1](priority) thanks
+- hey get tasks with priority [1](priority)
+- hey please help me get list of tasks [finished](state) thank you
+- pls list of tasks that are [started](state) Thank you very much
+- hey plz find list of tasks thanks
+- plz give tasks
+- hi please help me find tasks with priority [3](priority)
+- hi please help me find tasks
+- plz give list of tasks with priority [2](priority) Thank you very much
+- hi please give me list of tasks with priority [2](priority) Thank you very much
+- hey list of tasks Thank you very much
+- hello pls help me find tasks with priority [1](priority) thanks
+- hello plz give list of tasks [ongoing](state) thank you
+- hi please help me find tasks thanks
+
+## intent:anythingElse
+- that is good Do you need anything else?
+- sure Do you need anything else?
+- great Do you need anything else?
+- amazing Do you need anything else?
+- good Do you need anything else?
+- is there anything else you need help with today
+- okay is there anything else you need help with today
+- good is there anything else you need help with today
+- that is good is there anything else I can help you with
+- great is there anything else I can help you with
+- amazing is there anything else I can help you with
+- good is there anything else I can help you with
+- that is good Can I help with anything else
+- okay Can I help with anything else
+- good Can I help with anything else
+- anything else
+- sure anything else
+- great anything else
+- amazing anything else
+- ok anything else
+- good anything else
+- sure anything else I can assist you with
+- great anything else I can assist you with
+- amazing anything else I can assist you with
+- ok anything else I can assist you with
+- okay anything else I can assist you with
+- sure Sure, anything else?
+- amazing Sure, anything else?
+- ok Sure, anything else?
+- okay Sure, anything else?
+- good Sure, anything else?
+- that is good Great! Is there anything else?
+- sure Great! Is there anything else?
+- great Great! Is there anything else?
+- ok Great! Is there anything else?
+- If you have any other questions, let me know!
+- sure If you have any other questions, let me know!
+- great If you have any other questions, let me know!
+
+## intent:nothingElse
+- not really That was all Thank you very much
+- no That's all for now thanks
+- not really Nothing else
+- nope That will be it.
+- no That's all for now
+- that is all i want to know thanks
+- no Nothing else thanks
+- nope Nothing else thank you
+- not really That will be all thanks
+- not really That will be all Thank you very much
+- not really That's all for now
+- That will be all
+- no That's all for now thank you
+- nope that is all i want to know thank you
+- not really Nothing else thanks
+- not really That was all thank you
+- no Nothing else Thank you very much
+- nope That's all thanks
+- no That was all Thank you very much
+- no That will be it. thanks
+- That's all thanks
+- that is all i want to know thank you
+- Nothing else thank you
+- not really thanks
+- not really That was all thanks
+- not really that is all i want to know thank you
+- not really That's all thank you
+- not really That will be it. thank you
+- nope That will be all
+- not really That will be all thank you
+- no That's all thank you
+- That's all for now
+- not really That will be all
+- no that is all i want to know thanks
+- no That's all for now Thank you very much
+- That will be all Thank you very much
+- no That was all thank you
+- not really That will be it. thanks
+- nope Thank you very much
+- no That will be it.
+- nope That's all for now Thank you very much
+- Nothing else
+- That was all Thank you very much
+- no that is all i want to know
+- nope
+- That's all for now Thank you very much
+- That was all
+- nope That was all thank you
+- no Thank you very much
+- nope That was all
